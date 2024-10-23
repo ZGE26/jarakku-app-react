@@ -158,7 +158,7 @@ const Map = () => {
                     Jarak antara {markers[selectedMarker1]?.city} dan {markers[selectedMarker2]?.city}: {distance.toFixed(2)} km
                 </div>
             )}
-            <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+            <div style={{ textAlign: 'center', marginBottom: '20px', display: 'flex', flexDirection: 'row' }}>
                 <select onChange={(e) => setSelectedMarker1(e.target.value)} value={selectedMarker1} style={{ marginRight: '10px', padding: '10px'}}>
                     <option value="">Pilih Marker Pertama</option>
                     {markers.map((marker, index) => (
