@@ -134,7 +134,7 @@ const Map = () => {
     return (
         <div>
             <h2>Peta dengan Leaflet dan OpenStreetMap</h2>
-            <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', marginBottom: '20px' }}>
+            <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', marginBottom: '20px', flexWrap: 'wrap'}}>
                 <input 
                     type="text" 
                     placeholder="Nama Kota" 
