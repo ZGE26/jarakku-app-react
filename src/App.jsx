@@ -6,7 +6,7 @@ import './App.css';
 const App = () => {
   return (
     <div className='isi'>
-      <h1>Peta dengan Leaflet dan OpenStreetMap</h1>
+      <h1>Jarakku App</h1>
       <Map />
     </div>
   );
