@@ -140,12 +140,14 @@ const Map = () => {
                     placeholder="Nama Kota" 
                     value={city} 
                     onChange={(e) => setCity(e.target.value)} 
+                    style={{padding: '15px', borderRadius: '8px' }}
                 />
                 <input 
                     type="text" 
                     placeholder="Catatan" 
                     value={note} 
-                    onChange={(e) => setNote(e.target.value)} 
+                    onChange={(e) => setNote(e.target.value)}
+                    style={{padding: '15px', borderRadius: '8px' }} 
                 />
                 <button onClick={addMarker}>Tandai Lokasi</button>
                 <button onClick={clearMarkers}>Hapus Semua Tanda</button>
@@ -157,13 +159,13 @@ const Map = () => {
                 </div>
             )}
             <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-                <select onChange={(e) => setSelectedMarker1(e.target.value)} value={selectedMarker1} style={{ marginRight: '10px' }}>
+                <select onChange={(e) => setSelectedMarker1(e.target.value)} value={selectedMarker1} style={{ marginRight: '10px', padding: '15px'}}>
                     <option value="">Pilih Marker Pertama</option>
                     {markers.map((marker, index) => (
                         <option key={index} value={index}>{marker.city}</option>
                     ))}
                 </select>
-                <select onChange={(e) => setSelectedMarker2(e.target.value)} value={selectedMarker2} style={{ marginRight: '10px' }}>
+                <select onChange={(e) => setSelectedMarker2(e.target.value)} value={selectedMarker2} style={{ marginRight: '10px', padding: '15px' }}>
                     <option value="">Pilih Marker Kedua</option>
                     {markers.map((marker, index) => (
                         <option key={index} value={index}>{marker.city}</option>
