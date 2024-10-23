@@ -133,7 +133,7 @@ const Map = () => {
 
     return (
         <div>
-            <h2>Hitung Jarak Kordinar Dalam Satuan Km</h2>
+            <h2>Hitung Jarak</h2>
             <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', marginBottom: '20px', flexWrap: 'wrap'}}>
                 <input 
                     type="text" 
