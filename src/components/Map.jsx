@@ -159,13 +159,13 @@ const Map = () => {
                 </div>
             )}
             <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-                <select onChange={(e) => setSelectedMarker1(e.target.value)} value={selectedMarker1} style={{ marginRight: '10px', padding: '15px'}}>
+                <select onChange={(e) => setSelectedMarker1(e.target.value)} value={selectedMarker1} style={{ marginRight: '10px', padding: '10px'}}>
                     <option value="">Pilih Marker Pertama</option>
                     {markers.map((marker, index) => (
                         <option key={index} value={index}>{marker.city}</option>
                     ))}
                 </select>
-                <select onChange={(e) => setSelectedMarker2(e.target.value)} value={selectedMarker2} style={{ marginRight: '10px', padding: '15px' }}>
+                <select onChange={(e) => setSelectedMarker2(e.target.value)} value={selectedMarker2} style={{ marginRight: '10px', padding: '10px' }}>
                     <option value="">Pilih Marker Kedua</option>
                     {markers.map((marker, index) => (
                         <option key={index} value={index}>{marker.city}</option>
